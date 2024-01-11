@@ -1,0 +1,198 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #e4dfdf;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  border: #a4a4a9a3;
+  border-radius: 20px;
+  margin: 3%;
+  padding: 15px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); 
+  background-color: #ffffff;
+}
+
+.toolsApp {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid #d6cfcf;
+  background-color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 16px;
+  background-color: #ffffff;
+}
+
+.containerMain {
+  display: flex;
+  height: 50vh;
+  margin: 0 20px 20px 20px;
+  border-radius: 3px;
+}
+
+.dropdown-content button:hover {
+  color: rgb(45, 40, 208);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.mainBtn {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 20px 0 0;
+  margin: 2px;
+  color: rgb(0, 0, 0);
+  border: none;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.494);
+  background-color: #ffffff;
+}
+
+.leftBar {
+  flex: 0.6;
+  border-right: 1px solid #d6cfcf;
+  box-shadow: 3px 0 5px -5px #888;
+  overflow: auto;
+}
+
+
+.rightBar {
+  flex: 1;
+  overflow: auto;
+}
+
+.file-tree {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.file-list ul {
+  list-style-type: none;
+  font-size: 1em;
+  line-height: 1.8em;
+  margin-left: 0px;
+  padding-left: 18px;
+  border-left: 1px dotted #aaa;
+}
+
+.file-list li {
+  position: relative;
+  padding-left: 25px;
+  text-shadow: 3px 3px 5px rgba(112, 112, 112, 0.494);
+}
+
+.file-list li span {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.file-list li span:before {
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 10px;
+  height: 1px;
+  border-bottom: 1px dotted #aaa;
+  top: 0.6em;
+  left: -14px;
+}
+.file-list li:before {
+  display: block;
+  position: absolute;
+  list-style-type: none;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 1.3em;
+  color: #555;
+  content: url('./assets/icons/file.svg');
+}
+.file-list .folder-root {
+  list-style-type: none;
+}
+
+.file-list .folder-root:before {
+  content: url('./assets/icons/folder_close.svg');
+}
+.file-list .folder-root.open:before {
+  content: url('./assets/icons/folder_open.svg');
+}
+li.folder-root ul {
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+li.folder-root.closed > ul {
+  opacity: 0;
+  max-height: 0;
+}
+li.folder-root.open > ul {
+  opacity: 1;
+  display: block;
+  max-height: 1000px;
+}
+
+.tooltip {
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.viewList{
+  list-style: none;
+  color: #888;
+  padding: 0;
+  margin: 0;
+}
+
+.viewList li {
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  padding: 7px;
+}
+
+.activeTab {
+  color: rgb(4, 3, 3);
+  border-top: 1px solid rgb(28, 45, 173);
+  border-left: 1px solid rgb(28, 45, 173);
+  border-right: 1px solid rgb(28, 45, 173);
+}
+
+.nameTab {
+  cursor: pointer;
+}
+
+.closeBtnTab {
+  cursor: pointer;
+  margin-left: 5px;
+  color: rgb(185, 107, 107);
+}
+
+.viewTab {
+  margin: 0 10px 10px 10px;
+  padding: 0px;
+  height: 40vh;
+  overflow: auto;
+}
+
+.content {
+  height: 100%;
+  color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(28, 45, 173);
+}

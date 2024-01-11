@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>File store</title>
+  <script defer="defer" type="module" src="/src/index.ts"></script>
+</head>
+<body>
+  <main class="container">
+    <div class="toolsApp">
+      <button id="upload-file-btn">Загрузить файл</button>
+      <button id="download-file-btn">Скачать файл</button>
+      <button id="remove-file-btn">Удалить файл</button>
+      <button id="create-folder-btn">Создать папку</button>
+      <button id="remove-folder-btn">Удалить папку</button>
+      <button id="edit-description-btn">Редактировать описание</button>
+      <button id="rename-btn">Переименовать</button>
+    </div>
+    <div class="containerMain">
+      <p id="popover">Popover Text</p>
+      <div class="leftBar">
+        <ul id="root" class="file-tree file-list"></ul>
+      </div>
+      <div class="rightBar">
+        <ul class="viewList">
+        </ul>
+        <div class="viewTab">
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
