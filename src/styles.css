@@ -5,17 +5,17 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #e4dfdf;
+  font-family:'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom right, #413737, #f47c7c);
 }
 
 .container {
   box-sizing: border-box;
   width: 100%;
-  border: #a4a4a9a3;
   border-radius: 20px;
-  margin: 3%;
+  margin: 2%;
   padding: 15px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); 
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1); 
   background-color: #ffffff;
 }
 
@@ -23,16 +23,27 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 10px 0 10px 20px;
+  padding: 10px 10px 10px 10px;
   border-bottom: 1px solid #d6cfcf;
   background-color: #ffffff;
 }
 
 button {
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px 10px 10px;
+  margin: 5px;
+  color: rgb(0, 0, 0);
   border: none;
-  padding: 12px 16px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.494);
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family:'Times New Roman', Times, serif;
   background-color: #ffffff;
+}
+
+button:hover {
+  color: #df383e;
 }
 
 .containerMain {
@@ -50,25 +61,12 @@ button {
   display: block;
 }
 
-.mainBtn {
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 2px 20px 0 0;
-  margin: 2px;
-  color: rgb(0, 0, 0);
-  border: none;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.494);
-  background-color: #ffffff;
-}
-
 .leftBar {
   flex: 0.6;
   border-right: 1px solid #d6cfcf;
   box-shadow: 3px 0 5px -5px #888;
   overflow: auto;
 }
-
 
 .rightBar {
   flex: 1;
@@ -169,9 +167,9 @@ li.folder-root.open > ul {
 
 .activeTab {
   color: rgb(4, 3, 3);
-  border-top: 1px solid rgb(28, 45, 173);
-  border-left: 1px solid rgb(28, 45, 173);
-  border-right: 1px solid rgb(28, 45, 173);
+  border-top: 1px solid rgb(151, 27, 27);
+  border-left: 1px solid rgb(151, 27, 27);
+  border-right: 1px solid rgb(151, 27, 27);
 }
 
 .nameTab {
@@ -194,5 +192,5 @@ li.folder-root.open > ul {
 .content {
   height: 100%;
   color: rgb(255, 255, 255);
-  border-top: 2px solid rgb(28, 45, 173);
+  border-top: 2px solid rgb(151, 27, 27);
 }
