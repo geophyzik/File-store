@@ -26,14 +26,34 @@ export default (): void => {
               type: 'file',
               description: '',
               content:
-                'using System; if (1 === 1) {console.log(`hi`)};This is /// <summary> /// desc of file /// </summary> the content of File This is the content of File 1 This is the content of File 1',
+              `const sort = (coll) => {
+                let stepsCount = coll.length - 1;
+                let swapped;
+                do {
+                  swapped = false;
+                  for (let i = 0; i < stepsCount; i += 1) {
+                    if (coll[i] > coll[i + 1]) {
+                      const temp = coll[i];
+                      coll[i] = coll[i + 1];
+                      coll[i + 1] = temp;
+                      swapped = true;
+                    }
+                  }
+                  stepsCount -= 1;
+                } while (swapped); // продолжаем, пока swapped === true
+                console.log(coll)
+                return coll;
+              }
+              /// <summary> /// puzirkovaya sortirovka /// </summary> `
             },
             {
-              name: 'File 3',
+              name: 'File 2',
               type: 'file',
               description: '',
               content:
-                'import Main; if /// <summary> /// sdfdsf /// </summary> the content of File This is the content of File 1 This is the content of File 1',
+               `console.log('hello world') 
+                /// <summary> /// Privet /// </summary>`
+              ,
             },
           ],
         },
