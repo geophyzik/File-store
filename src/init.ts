@@ -127,7 +127,6 @@ export default (): void => {
             elements.openContentTab.textContent = '';
           }
           elements.openContentTab?.appendChild(editor);
-          Preview(item.content);
         });
   
         closeBtn.addEventListener('click', () => {
